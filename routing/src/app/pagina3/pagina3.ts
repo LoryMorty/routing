@@ -1,15 +1,16 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { Studenti } from '../studenti/studenti';
 
 @Component({
   selector: 'app-pagina3',
-  imports: [CommonModule],
+  imports: [CommonModule, Studenti],
   templateUrl: './pagina3.html',
   styleUrl: './pagina3.css',
 })
 export class Pagina3 {
   studenti = [
-{ id: 1, nome: 'Mario', classe: '5D', mediaVoti: 4.1 },
+{ id: 1, nome: 'Mario', classe: '5E', mediaVoti: 4.1 },
 { id: 2, nome: 'Luca', classe: '5D', mediaVoti: 7.3 },
 { id: 3, nome: 'Luigi', classe: '5D', mediaVoti: 3.9 },
 { id: 4, nome: 'Paolo', classe: '5D', mediaVoti: 7.0 },
