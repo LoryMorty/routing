@@ -1,1 +1,16 @@
-<p>pagina2 works!</p>
+<h2>Aggiungi un nuovo studente</h2>
+
+<div style="margin: 20px 0;">
+  <label>Nome:</label>
+  <input type="text" [(ngModel)]="nome" placeholder="Inserisci il nome"><br><br>
+
+  <label>Classe:</label>
+  <input type="text" [(ngModel)]="classe" placeholder="Inserisci la classe"><br><br>
+
+  <label>Media voti:</label>
+  <input type="number" [(ngModel)]="mediaVoti" placeholder="Inserisci la media"><br><br>
+
+  <button (click)="aggiungiStudente()">Aggiungi studente</button>
+</div>
+
+<a routerLink="/pagina3">Vai a Pagina 3 per visualizzare gli studenti</a>

@@ -10,5 +10,4 @@ import { Component, input, Input } from '@angular/core';
 export class Studenti {
   @Input() nome!: string;
   @Input() classe!: string;
-  @Input() mediaVoti!: number;
 }
