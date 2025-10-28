@@ -1,4 +1,10 @@
-<app-studenti
-*ngFor="let p of studenti"
-[nome]="p.nome"
-[classe]="p.classe">></app-studenti>
+<h2>Lista studenti</h2>
+
+<div *ngFor="let s of studenti" style="border: 1px solid #ccc; padding: 8px; margin: 8px 0;">
+  <p><strong>Nome:</strong> {{ s.nome }}</p>
+  <p><strong>Classe:</strong> {{ s.classe }}</p>
+  <p><strong>Media voti:</strong> {{ s.mediaVoti }}</p>
+  <button (click)="eliminaStudente(s.id)">❌ Rimuovi studente</button>
+</div>
+
+<a routerLink="/pagina2">Aggiungi nuovo studente</a>

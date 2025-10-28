@@ -11,8 +11,18 @@ import { StudentiService } from '../services/studenti-service';
 })
 export class Pagina3 {
   studenti: any[] = [];
+
   constructor(private studentiService: StudentiService) {}
+
   ngOnInit() {
-this.studenti = this.studentiService.getStudenti();
+    this.studenti = this.studentiService.getStudenti();
+  }
+
+  eliminaStudente(id: number) {
+    if (confirm('Vuoi davvero eliminare questo studente?')) {
+      this.studentiService.rimuoviStudente(id);
+      this.studenti = this.studentiService.getStudenti(); // aggiorna la lista
+    }
+  }
 }
-}
+

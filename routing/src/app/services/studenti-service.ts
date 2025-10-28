@@ -27,5 +27,7 @@ export class StudentiService {
   }
 
 
-
+  rimuoviStudente(id: number) {
+    this.studenti = this.studenti.filter(s => s.id !== id);
+  }
 }
