@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { Pagina1 } from './pagina1/pagina1';
 import { Pagina2 } from './pagina2/pagina2';
 import { Pagina3 } from './pagina3/pagina3';
+import { DettaglioStudente } from './dettaglio-studente/dettaglio-studente';
 
 
 export const routes: Routes = [
@@ -10,7 +11,10 @@ export const routes: Routes = [
     //se l'URL è /pagina1 mostra il componente Pagina1
     { path: 'pagina1', component: Pagina1 },
     { path: 'pagina2', component: Pagina2 },
-    { path: 'pagina3', component: Pagina3}
+    { path: 'pagina3', component: Pagina3},
     //SINTASSI
     //{ path: 'url', component: Componente},
+    { path: 'pagina3/:id', component: DettaglioStudente },
+    //SINTASSI
+    //{ path: 'url/:parametro', component: Componente},
 ];

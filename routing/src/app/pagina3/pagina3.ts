@@ -2,10 +2,11 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { Studenti } from '../studenti/studenti';
 import { StudentiService } from '../services/studenti-service';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-pagina3',
-  imports: [CommonModule, Studenti],
+  imports: [CommonModule, Studenti, RouterLink],
   templateUrl: './pagina3.html',
   styleUrl: './pagina3.css',
 })
