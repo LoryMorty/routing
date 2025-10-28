@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, input, Input } from '@angular/core';
 
 @Component({
   selector: 'app-studenti',
@@ -10,4 +10,5 @@ import { Component, Input } from '@angular/core';
 export class Studenti {
   @Input() nome!: string;
   @Input() classe!: string;
+  @Input() mediaVoti!: number;
 }
